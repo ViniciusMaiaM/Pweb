@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="meuAmor">
+      <h1 class="fade-out">Guinness</h1>
+    </div>
+
+    <div id="botaoContainer">
+      <button id="botaoCarregar">Carregar cervejas...</button>
+    </div>
+
+    <script>
+      function carregarDiv() {
+        let div = document.getElementById("meuAmor");
+
+        if (div.classList.contains("fade-out")) {
+          div.classList.remove("fade-out");
+          div.classList.add("fade-in");
+          div.innerHTML = "<h1>Guinness</h1>";
+        } else {
+          // Efeito fade out
+          div.classList.remove("fade-in");
+          div.classList.add("fade-out");
+          setTimeout(() => {
+            div.innerHTML = "";
+          }, 800);
+        }
+      }
+
+      let botao = document.getElementById("botaoCarregar");
+
+      botao.addEventListener("click", carregarDiv);
+    </script>
+  </body>
+</html>
