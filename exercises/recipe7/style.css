@@ -10,13 +10,12 @@ body {
 table {
     border-collapse: collapse;
     width: 100%;
-    font-family: Arial, sans-serif;
 }
 
 th,
 td {
     border: 1px solid #dddddd;
-    text-align: left;
+    text-align: center;
     padding: 20px;
 }
 
@@ -34,7 +33,23 @@ tr:hover {
     max-width: 800px;
 }
 
+
+#botoes {
+    margin-top: 20px;
+}
+
 #botoes button {
     margin-right: 10px;
-    padding: 10px;
+    padding: 18px;
+    background-color: #265587;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    transition: background-color 0.3s ease;
+}
+
+#botoes button:hover {
+    background-color: #0056b3;
 }
