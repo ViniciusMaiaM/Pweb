@@ -18,7 +18,7 @@
         class TabelaBebidas extends React.Component {
             render() {
                 return (
-                    <div>
+                    <div id="table">
                         <h1>{this.props.titulo}</h1>
                         <table id="tabela" border="1">
                             <thead>
@@ -40,11 +40,19 @@
         }
 
         class OutroComponente extends React.Component {
+            redirectToURL() {
+                window.open("https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1543250");
+            }
+
             render() {
                 return (
-                    <div>
-                        <h2>{this.props.titulo}</h2>
-                        <p>Este é outro componente de classe.</p>
+                    <div id="other-component">
+                        <img id="fabricio" src="https://www.anselmosantana.com.br/wp-content/uploads/2020/01/12484667_10207437654794787_1820580348595264639_o.jpg" alt="Imagem do professor Fabricio" />
+                        <div id="content">
+                            <h2>{this.props.titulo}</h2>
+                            <p>Doutor em Ciência da computação, programador, grande apreciador de bebidas de qualidade duvidosa, baixista, etc...</p>
+                            <button onClick={this.redirectToURL}>Mais Sobre</button>
+                        </div>
                     </div>
                 );
             }
@@ -53,7 +61,7 @@
         ReactDOM.render(
             <div>
                 <TabelaBebidas titulo="Tabela de Bebidas" />
-                <OutroComponente titulo="Outro Componente" />
+                <OutroComponente titulo="Fabricio Vale" />
             </div>,
             document.getElementById("app")
         );
