@@ -33,3 +33,19 @@ tr:hover {
     width: 80%;
     max-width: 800px;
 }
+
+button {
+    margin-right: 10px;
+    padding: 18px;
+    background-color: #265587;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
