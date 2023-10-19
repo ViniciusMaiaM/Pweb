@@ -28,7 +28,7 @@ export default function Details() {
         <div className={styles.container}>
             <h1 className={styles.title}>{data.Title}</h1>
             <img src={data.Poster} alt={data.Title} className={styles.poster} />
-            <div className={styles.content}>
+            <div className={styles.content}>0
                 <p>{data.Plot}</p>
                 <p>Year: {data.Year}</p>
                 <p>Director: {data.Director}</p>

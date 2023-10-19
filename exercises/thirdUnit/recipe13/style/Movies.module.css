@@ -64,3 +64,9 @@
     word-break: break-all;
     font-size: 14px;
 }
+
+.error{
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
