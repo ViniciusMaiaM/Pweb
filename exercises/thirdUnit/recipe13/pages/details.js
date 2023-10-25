@@ -4,6 +4,8 @@ import { useRouter } from 'next/router';
 import useSWR from 'swr';
 import styles from '../style/Details.module.css';
 
+
+// Receita 14
 const fetcher = async (url) => {
     const res = await fetch(url);
     const json = await res.json();
